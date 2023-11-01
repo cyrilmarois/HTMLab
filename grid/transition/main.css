@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'sans-serif';
+}
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 16px;
+}
+
+.example {
+  margin: 1rem;
+  padding: 1rem;
+  background: hsl(200 50% 50% / 50%);
+  border-radius: 0.5rem;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.example > div {
+  overflow: hidden;
+}
+
+.example:hover {
+  grid-template-rows: 1fr;
+}
