@@ -34,10 +34,7 @@ body {
 .example:hover {
   grid-template-rows: 1fr;
 }
-.button {
-  display: flex;
-  justify-content: space-evenly;
-}
+
 button.primary {
   padding: 1em 2em;
   background-color: darkcyan;
