@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .blur figure > img {
+  filter: blur(5px);
+}
+.container .blur figure > img:hover {
+  filter: blur();
+}
+
+.container .contrast figure > img {
+  filter: contrast(100);
+}
+.container .contrast figure > img:hover {
+  filter: contrast();
+}
+
+.container .grayscale figure > img {
+  filter: grayscale(100);
+}
+.container .grayscale figure > img:hover {
+  filter: grayscale(0);
+}
+
+.container .saturate figure > img {
+  filter: saturate(500%);
+}
+.container .saturate figure > img:hover {
+  filter: saturate();
+}
+
+.container .sepia figure > img {
+  filter: sepia(100);
+}
+.container .sepia figure > img:hover {
+  filter: sepia(0);
+}
