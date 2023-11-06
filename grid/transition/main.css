@@ -29,3 +29,23 @@ body {
 .example:hover {
   grid-template-rows: 1fr;
 }
+.button {
+  display: flex;
+  justify-content: center;
+}
+button.primary {
+  padding: 1em 2em;
+  background-color: darkcyan;
+  color: white;
+  border: 0;
+  border-radius: 0.25em;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 1000ms;
+}
+
+button:hover,
+button:focus-visible {
+  transform: translateY(-1.5rem);
+  transition: transform 250ms;
+}
