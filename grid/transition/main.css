@@ -11,6 +11,11 @@ body {
   font-size: 16px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
 .example {
   margin: 1rem;
   padding: 1rem;
@@ -78,4 +83,57 @@ button.gay-pride {
   100% {
     background-color: purple;
   }
+}
+
+.loader,
+.buttons {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  clip-path: circle();
+  background-color: red;
+  display: inline-flex;
+}
+.dot.dance {
+  animation: rise 2000ms infinite alternate;
+}
+@keyframes rise {
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.dot.dance:nth-child(1) {
+  animation-delay: 100ms;
+}
+.dot.dance:nth-child(2) {
+  animation-delay: 200ms;
+}
+.dot.dance:nth-child(3) {
+  animation-delay: 300ms;
+}
+.dot.dance:nth-child(4) {
+  animation-delay: 400ms;
+}
+.dot.dance:nth-child(5) {
+  animation-delay: 500ms;
+}
+.dot.dance:nth-child(6) {
+  animation-delay: 600ms;
+}
+.dot.dance:nth-child(7) {
+  animation-delay: 700ms;
+}
+.dot.dance:nth-child(8) {
+  animation-delay: 800ms;
+}
+.dot.dance:nth-child(9) {
+  animation-delay: 900ms;
+}
+.dot.dance:nth-child(10) {
+  animation-delay: 1000ms;
 }
