@@ -1,0 +1,23 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+}
+#gallery {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+#gallery > .image {
+  width: 25vmin;
+  height: 50vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  filter: grayscale();
+}

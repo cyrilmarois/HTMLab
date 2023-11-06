@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.frameA {
+  width: 250px;
+  height: 250px;
+  border: 3px solid violet;
+  perspective: 100px;
+}
+
+.shapeA {
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+  transform: rotate(45deg);
+  transition: all 3s ease;
+}
+
+.frameB {
+  width: 250px;
+  height: 250px;
+  border: 3px solid violet;
+  perspective: 200px;
+}
+
+.shapeB {
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+  transform: rotateX(45deg);
+  transition: all 3s ease;
+}
+
+.frameC {
+  width: 250px;
+  height: 250px;
+  border: 3px solid violet;
+  perspective: 200px;
+}
+
+.shapeC {
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+  transform: rotateY(145deg);
+  transition: all 3s ease;
+}

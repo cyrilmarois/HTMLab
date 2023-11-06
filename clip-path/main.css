@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+section.circle {
+  margin-inline: auto;
+  width: 250px;
+  height: 250px;
+  background-color: blueviolet;
+  clip-path: circle(50%);
+}
+
+section.circle-square {
+  cursor: pointer;
+  margin-inline: auto;
+  width: 250px;
+  height: 250px;
+  background-color: pink;
+  clip-path: circle(50% at 0 0);
+  transition: all 2s ease;
+}
+
+section.circle-square:hover {
+  clip-path: circle(100%);
+}
+
+section.square {
+  margin-inline: auto;
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+  clip-path: circle(100%);
+}
+
+section.polygon {
+  width: 250px;
+  height: 250px;
+  background-color: cornflowerblue;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}

@@ -11,6 +11,11 @@ body {
   font-size: 16px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
 .example {
   margin: 1rem;
   padding: 1rem;
@@ -28,4 +33,104 @@ body {
 
 .example:hover {
   grid-template-rows: 1fr;
+}
+
+button.primary {
+  padding: 1em 2em;
+  background-color: darkcyan;
+  color: white;
+  border: 0;
+  border-radius: 0.25em;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 1000ms;
+}
+
+button.primary:hover,
+button.primary:focus-visible {
+  transform: translateY(-1.5rem);
+  transition: transform 250ms;
+}
+button.gay-pride {
+  padding: 1em 2em;
+  color: white;
+  border: 0;
+  border-radius: 0.25em;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: lgbt 5000ms infinite;
+}
+
+@keyframes lgbt {
+  16% {
+    background-color: red;
+  }
+  33% {
+    background-color: orange;
+  }
+  49% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: green;
+  }
+  83% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+.loader,
+.buttons {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  clip-path: circle();
+  background-color: red;
+  display: inline-flex;
+}
+.dot.dance {
+  animation: rise 2000ms infinite alternate;
+}
+@keyframes rise {
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.dot.dance:nth-child(1) {
+  animation-delay: 100ms;
+}
+.dot.dance:nth-child(2) {
+  animation-delay: 200ms;
+}
+.dot.dance:nth-child(3) {
+  animation-delay: 300ms;
+}
+.dot.dance:nth-child(4) {
+  animation-delay: 400ms;
+}
+.dot.dance:nth-child(5) {
+  animation-delay: 500ms;
+}
+.dot.dance:nth-child(6) {
+  animation-delay: 600ms;
+}
+.dot.dance:nth-child(7) {
+  animation-delay: 700ms;
+}
+.dot.dance:nth-child(8) {
+  animation-delay: 800ms;
+}
+.dot.dance:nth-child(9) {
+  animation-delay: 900ms;
+}
+.dot.dance:nth-child(10) {
+  animation-delay: 1000ms;
 }
